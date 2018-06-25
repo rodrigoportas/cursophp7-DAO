@@ -29,8 +29,21 @@ echo json_encode($usuarios);*/
 //$usuario->login("keke","87654323467");
 //echo $usuario;
 
-$aluno= new Usuario("aluno","@lun0");
-$aluno->insert();
-echo $aluno;
+//$aluno= new Usuario("aluno","@lun0");
+//$aluno->insert();
+//echo $aluno;
+
+//alterar usuario
+//$usuario = new Usuario();
+//$usuario->loadById(44);
+//$usuario->update("professor","!#$¨&*");
+//echo $usuario;
+
+
+//deletar usuario
+$usuario = new Usuario();
+$usuario->loadById(40);
+$usuario->delete();
+echo $usuario;
 
 ?>
