@@ -25,8 +25,12 @@ echo json_encode($usuarios);*/
 
 
 //carrega um usuario usando o login e a senha
-$usuario = new Usuario();
-$usuario->login("keke","87654323467");
-echo $usuario;
+//$usuario = new Usuario();
+//$usuario->login("keke","87654323467");
+//echo $usuario;
+
+$aluno= new Usuario("aluno","@lun0");
+$aluno->insert();
+echo $aluno;
 
 ?>
